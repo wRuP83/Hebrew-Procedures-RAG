@@ -1,0 +1,2268 @@
+{
+  "run_signature": "58eab52996bc0df9bba7c31ffb2511e99f00bacd9ae5e515ce2f6a21cd67cd9c",
+  "updated_at_utc": "2026-11-09T13:14:29.144275+00:00",
+  "config": {
+    "embed_model": "paraphrase-multilingual-MiniLM-L12-v2",
+    "reranker": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "llm_model": "gemini-3.8-flash",
+    "top_k": 3,
+    "candidates": 5,
+    "rerank_min": -2.0
+  },
+  "packages": {
+    "google-genai": "3.0.0",
+    "chromadb": "1.5.9",
+    "sentence-transformers": "6.2.0",
+    "pydantic": "2.14.3"
+  },
+  "doc_sha256": "923188ceaca36537f5c123fc56e3992b3e689e5c792c0384fe762359472e60f2",
+  "base": {
+    "OLD-01": {
+      "case": {
+        "case_id": "OLD-01",
+        "q": "תוך כמה זמן אפשר לערער על דחיית תביעה?",
+        "expected_id": "7.3",
+        "expected": "הגשת ערעור בתוך 45 ימים מקבלת מכתב הדחייה; לא 30 ימים מהגרסה הישנה."
+      },
+      "result": {
+        "q": "תוך כמה זמן אפשר לערער על דחיית תביעה?",
+        "search_q": "תוך כמה זמן אפשר לערער על דחיית תביעה?",
+        "role": "customer",
+        "hits": [
+          [
+            "7.3",
+            8.84
+          ]
+        ],
+        "trace": [
+          {
+            "id": "7.3",
+            "score_raw": 8.839027404785156
+          },
+          {
+            "id": "4.6",
+            "score_raw": -2.2101383209228516
+          },
+          {
+            "id": "2.1",
+            "score_raw": -4.433858871459961
+          },
+          {
+            "id": "11.4",
+            "score_raw": -4.95148229598999
+          },
+          {
+            "id": "9.2",
+            "score_raw": -7.040114879608154
+          }
+        ],
+        "context": "[7.3] נוהל 7.3 – ערעור על דחיית תביעה\nלקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה. הערעור מוגש בכתב בלבד, דרך האזור האישי או בדואר. ועדת ערעורים תשיב בתוך 30 ימי עסקים. \nהערה: עד גרסה 3.0 התקופה לערעור הייתה 30 ימים.",
+        "answer": "לקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה [7.3].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 8871,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "7.3"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "45",
+            "7",
+            "3"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "לקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה",
+              "supported": true,
+              "evidence": "לקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "7.3",
+          "expected_retrieved": true,
+          "top": "7.3"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-02": {
+      "case": {
+        "case_id": "OLD-02",
+        "q": "תוך כמה זמן ועדת הערעורים עונה?",
+        "expected_id": "7.3",
+        "expected": "ועדת הערעורים תשיב בתוך 30 ימי עסקים; אין להחליף בימים רגילים ואין לבלבל עם 45 ימים להגשה."
+      },
+      "result": {
+        "q": "תוך כמה זמן ועדת הערעורים עונה?",
+        "search_q": "תוך כמה זמן ועדת הערעורים עונה?",
+        "role": "customer",
+        "hits": [
+          [
+            "7.3",
+            0.33
+          ]
+        ],
+        "trace": [
+          {
+            "id": "7.3",
+            "score_raw": 0.3274715542793274
+          },
+          {
+            "id": "4.6",
+            "score_raw": -3.4385082721710205
+          },
+          {
+            "id": "11.4",
+            "score_raw": -4.1673712730407715
+          },
+          {
+            "id": "2.1",
+            "score_raw": -4.379979133605957
+          },
+          {
+            "id": "9.2",
+            "score_raw": -6.510745048522949
+          }
+        ],
+        "context": "[7.3] נוהל 7.3 – ערעור על דחיית תביעה\nלקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה. הערעור מוגש בכתב בלבד, דרך האזור האישי או בדואר. ועדת ערעורים תשיב בתוך 30 ימי עסקים. \nהערה: עד גרסה 3.0 התקופה לערעור הייתה 30 ימים.",
+        "answer": "ועדת ערעורים תשיב בתוך 30 ימי עסקים [7.3].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 6311,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "7.3"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "30",
+            "7",
+            "3"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "ועדת ערעורים תשיב בתוך 30 ימי עסקים",
+              "supported": true,
+              "evidence": "ועדת ערעורים תשיב בתוך 30 ימי עסקים."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מדויקת, עונה ישירות לשאלה בהתאם לציפייה, נתמכת באופן מלא בקונטקסט ועומדת בכל כללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "7.3",
+          "expected_retrieved": true,
+          "top": "7.3"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-03": {
+      "case": {
+        "case_id": "OLD-03",
+        "q": "אני רוצה לבטל את הפוליסה",
+        "expected_id": "4.6",
+        "expected": "אפשר לבטל בכל עת בכתב או בטלפון מוקלט. בתוך 14 ימים החזר מלא; לאחר מכן סוף חודש קלנדרי וללא החזר יחסי."
+      },
+      "result": {
+        "q": "אני רוצה לבטל את הפוליסה",
+        "search_q": "אני רוצה לבטל את הפוליסה",
+        "role": "customer",
+        "hits": [
+          [
+            "4.6",
+            3.92
+          ]
+        ],
+        "trace": [
+          {
+            "id": "4.6",
+            "score_raw": 3.920339822769165
+          },
+          {
+            "id": "7.3",
+            "score_raw": -2.2472140789031982
+          },
+          {
+            "id": "2.1",
+            "score_raw": -3.231407403945923
+          },
+          {
+            "id": "9.2",
+            "score_raw": -4.223578929901123
+          },
+          {
+            "id": "11.4",
+            "score_raw": -5.893382549285889
+          }
+        ],
+        "context": "[4.6] נוהל 4.6 – ביטול פוליסה\nלקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט. ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה. לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי.",
+        "answer": "לקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט [4.6]. ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה [4.6]. לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי [4.6].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 10274,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "4.6"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "4",
+            "6",
+            "14",
+            "4",
+            "6",
+            "14",
+            "4",
+            "6"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "לקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט",
+              "supported": true,
+              "evidence": "לקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט."
+            },
+            {
+              "claim": "ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה",
+              "supported": true,
+              "evidence": "ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה."
+            },
+            {
+              "claim": "לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי",
+              "supported": true,
+              "evidence": "לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מדויקת, עונה במלואה על השאלה בהתאם לקונטקסט ולציפייה, ועומדת בכל כללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 3,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "4.6",
+          "expected_retrieved": true,
+          "top": "4.6"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-04": {
+      "case": {
+        "case_id": "OLD-04",
+        "q": "איך מפסיקים את הביטוח?",
+        "expected_id": "4.6",
+        "expected": "אפשר לבטל בכל עת בכתב או בטלפון מוקלט. בתוך 14 ימים החזר מלא; לאחר מכן סוף חודש קלנדרי וללא החזר יחסי."
+      },
+      "result": {
+        "q": "איך מפסיקים את הביטוח?",
+        "search_q": "איך מפסיקים את הביטוח?",
+        "role": "customer",
+        "hits": [
+          [
+            "4.6",
+            -0.1
+          ]
+        ],
+        "trace": [
+          {
+            "id": "4.6",
+            "score_raw": -0.10395165532827377
+          },
+          {
+            "id": "7.3",
+            "score_raw": -3.6090314388275146
+          },
+          {
+            "id": "2.1",
+            "score_raw": -4.117208003997803
+          },
+          {
+            "id": "9.2",
+            "score_raw": -4.5818705558776855
+          },
+          {
+            "id": "11.4",
+            "score_raw": -5.401264667510986
+          }
+        ],
+        "context": "[4.6] נוהל 4.6 – ביטול פוליסה\nלקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט. ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה. לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי.",
+        "answer": "לקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט [4.6]. ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה [4.6]. לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי [4.6].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 11969,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "4.6"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "4",
+            "6",
+            "14",
+            "4",
+            "6",
+            "14",
+            "4",
+            "6"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "לקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט",
+              "supported": true,
+              "evidence": "לקוח רשאי לבטל פוליסה בכל עת בהודעה בכתב או בטלפון מוקלט."
+            },
+            {
+              "claim": "ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה",
+              "supported": true,
+              "evidence": "ביטול בתוך 14 ימים מההצטרפות מזכה בהחזר מלא של הפרמיה."
+            },
+            {
+              "claim": "לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי",
+              "supported": true,
+              "evidence": "לאחר 14 ימים, הביטול נכנס לתוקף בסוף החודש הקלנדרי ואין החזר יחסי."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מלאה, מדויקת, נתמכת במלואה בקונטקסט ועומדת בכל כללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 3,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "4.6",
+          "expected_retrieved": true,
+          "top": "4.6"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-05": {
+      "case": {
+        "case_id": "OLD-05",
+        "q": "כמה זמן מחכים לפני ניתוח?",
+        "expected_id": "2.1",
+        "expected": "תקופת האכשרה לניתוחים היא 12 חודשים."
+      },
+      "result": {
+        "q": "כמה זמן מחכים לפני ניתוח?",
+        "search_q": "כמה זמן מחכים לפני ניתוח?",
+        "role": "customer",
+        "hits": [
+          [
+            "2.1",
+            -1.44
+          ]
+        ],
+        "trace": [
+          {
+            "id": "2.1",
+            "score_raw": -1.4358289241790771
+          },
+          {
+            "id": "7.3",
+            "score_raw": -3.8216187953948975
+          },
+          {
+            "id": "4.6",
+            "score_raw": -3.9149577617645264
+          },
+          {
+            "id": "11.4",
+            "score_raw": -4.646000862121582
+          },
+          {
+            "id": "9.2",
+            "score_raw": -6.458408355712891
+          }
+        ],
+        "context": "[2.1] נוהל 2.1 – הצטרפות לביטוח משלים\nלקוח חדש יכול להצטרף לביטוח המשלים בכל יום עסקים. תקופת אכשרה (המתנה) לפני קבלת שירותים: 90 ימים. לניתוחים: 12 חודשים. לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה.",
+        "answer": "תקופת ההמתנה (אכשרה) לניתוחים היא 12 חודשים [2.1]. עם זאת, לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה [2.1].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 10033,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "2.1"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "12",
+            "2",
+            "1",
+            "2",
+            "1"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "תקופת ההמתנה (אכשרה) לניתוחים היא 12 חודשים",
+              "supported": true,
+              "evidence": "לניתוחים: 12 חודשים."
+            },
+            {
+              "claim": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה",
+              "supported": true,
+              "evidence": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מלאה, מדויקת, נתמכת במלואה בקונטקסט ועומדת בכל כללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 2,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "2.1",
+          "expected_retrieved": true,
+          "top": "2.1"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-06": {
+      "case": {
+        "case_id": "OLD-06",
+        "q": "מה התקרה השנתית להחזר על תרופות?",
+        "expected_id": "9.2",
+        "expected": "התקרה השנתית לתרופות מחוץ לסל היא 12,000 ש״ח בשנה קלנדרית."
+      },
+      "result": {
+        "q": "מה התקרה השנתית להחזר על תרופות?",
+        "search_q": "מה התקרה השנתית להחזר על תרופות?",
+        "role": "customer",
+        "hits": [
+          [
+            "9.2",
+            2.26
+          ]
+        ],
+        "trace": [
+          {
+            "id": "9.2",
+            "score_raw": 2.2617523670196533
+          },
+          {
+            "id": "2.1",
+            "score_raw": -3.5964736938476562
+          },
+          {
+            "id": "4.6",
+            "score_raw": -3.8560500144958496
+          },
+          {
+            "id": "11.4",
+            "score_raw": -5.261692523956299
+          },
+          {
+            "id": "7.3",
+            "score_raw": -5.86906099319458
+          }
+        ],
+        "context": "[9.2] נוהל 9.2 – החזר הוצאות תרופות\nתרופות מחוץ לסל הבריאות מוחזרות בשיעור 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית. נדרש מרשם רופא ואישור מוקדם מהמחלקה הרפואית. תרופות ניסיוניות אינן מכוסות.",
+        "answer": "התקרה השנתית להחזר עבור תרופות מחוץ לסל הבריאות היא 12,000 ש\"ח בשנה קלנדרית, בשיעור החזר של 75% [9.2]. הזכאות מותנית במרשם רופא ובאישור מוקדם מהמחלקה הרפואית, כאשר תרופות ניסיוניות אינן מכוסות [9.2].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 10159,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "9.2"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "12,000",
+            "75",
+            "9",
+            "2",
+            "9",
+            "2"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "התקרה השנתית להחזר עבור תרופות מחוץ לסל הבריאות היא 12,000 ש\"ח בשנה קלנדרית",
+              "supported": true,
+              "evidence": "תרופות מחוץ לסל הבריאות מוחזרות בשיעור 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית."
+            },
+            {
+              "claim": "שיעור ההחזר לתרופות מחוץ לסל הבריאות הוא 75%",
+              "supported": true,
+              "evidence": "תרופות מחוץ לסל הבריאות מוחזרות בשיעור 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית."
+            },
+            {
+              "claim": "הזכאות מותנית במרשם רופא ובאישור מוקדם מהמחלקה הרפואית",
+              "supported": true,
+              "evidence": "נדרש מרשם רופא ואישור מוקדם מהמחלקה הרפואית."
+            },
+            {
+              "claim": "תרופות ניסיוניות אינן מכוסות",
+              "supported": true,
+              "evidence": "תרופות ניסיוניות אינן מכוסות."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 4,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "9.2",
+          "expected_retrieved": true,
+          "top": "9.2"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-07": {
+      "case": {
+        "case_id": "OLD-07",
+        "q": "מתי המוקד פתוח בשישי?",
+        "expected_id": "11.4",
+        "expected": "ביום שישי המוקד הרגיל פועל מ-08:00 עד 13:00."
+      },
+      "result": {
+        "q": "מתי המוקד פתוח בשישי?",
+        "search_q": "מתי המוקד פתוח בשישי?",
+        "role": "customer",
+        "hits": [
+          [
+            "11.4",
+            1.19
+          ]
+        ],
+        "trace": [
+          {
+            "id": "11.4",
+            "score_raw": 1.1922804117202759
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.333792209625244
+          },
+          {
+            "id": "2.1",
+            "score_raw": -5.691946506500244
+          },
+          {
+            "id": "7.3",
+            "score_raw": -5.79870080947876
+          },
+          {
+            "id": "9.2",
+            "score_raw": -7.76055383682251
+          }
+        ],
+        "context": "[11.4] נוהל 11.4 – שירות לקוחות\nמוקד הטלפוני פעיל בימים א'–ה' בשעות 08:00–20:00 ובימי ו' 08:00–13:00. בשבת ובחגים המוקד סגור, למעט קו חירום רפואי הפעיל 24/7.",
+        "answer": "בימי שישי המוקד הטלפוני פעיל בשעות 08:00–13:00 [11.4].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 8787,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "11.4"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "08",
+            "00",
+            "13",
+            "00",
+            "11",
+            "4"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "בימי שישי המוקד הטלפוני פעיל בשעות 08:00–13:00",
+              "supported": true,
+              "evidence": "מוקד הטלפוני פעיל בימים א'–ה' בשעות 08:00–20:00 ובימי ו' 08:00–13:00."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מדויקת, עונה ישירות על השאלה, נתמכת במלואה בקונטקסט ועומדת בכללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "11.4",
+          "expected_retrieved": true,
+          "top": "11.4"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-08": {
+      "case": {
+        "case_id": "OLD-08",
+        "q": "לקוח עבר מחברה אחרת, יש לו תקופת אכשרה?",
+        "expected_id": "2.1",
+        "expected": "פטור מתקופת אכשרה רק אם המעבר מחברה אחרת היה ללא הפסקה; אין להעניק פטור ללא התנאי."
+      },
+      "result": {
+        "q": "לקוח עבר מחברה אחרת, יש לו תקופת אכשרה?",
+        "search_q": "לקוח עבר מחברה אחרת, יש לו תקופת אכשרה?",
+        "role": "customer",
+        "hits": [
+          [
+            "2.1",
+            6.6
+          ]
+        ],
+        "trace": [
+          {
+            "id": "2.1",
+            "score_raw": 6.5972819328308105
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.12006950378418
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.075735569000244
+          },
+          {
+            "id": "9.2",
+            "score_raw": -7.389596462249756
+          },
+          {
+            "id": "11.4",
+            "score_raw": -7.628159046173096
+          }
+        ],
+        "context": "[2.1] נוהל 2.1 – הצטרפות לביטוח משלים\nלקוח חדש יכול להצטרף לביטוח המשלים בכל יום עסקים. תקופת אכשרה (המתנה) לפני קבלת שירותים: 90 ימים. לניתוחים: 12 חודשים. לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה.",
+        "answer": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה [2.1].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 8883,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "2.1"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "2",
+            "1"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה",
+              "supported": true,
+              "evidence": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מדויקת, נתמכת במלואה בקונטקסט ומציינת במפורש את התנאי שהמעבר היה ללא הפסקה בהתאם לציפייה.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "2.1",
+          "expected_retrieved": true,
+          "top": "2.1"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "OLD-09": {
+      "case": {
+        "case_id": "OLD-09",
+        "q": "האם הביטוח מכסה טיפולי שיניים?",
+        "expected_id": null,
+        "expected": "אין בחוברת מידע על כיסוי שיניים. חייבים לסרב ולא לקבוע שיש או שאין כיסוי."
+      },
+      "result": {
+        "q": "האם הביטוח מכסה טיפולי שיניים?",
+        "search_q": "האם הביטוח מכסה טיפולי שיניים?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "9.2",
+            "score_raw": -3.671341896057129
+          },
+          {
+            "id": "4.6",
+            "score_raw": -4.039528846740723
+          },
+          {
+            "id": "2.1",
+            "score_raw": -4.375838756561279
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.733204364776611
+          },
+          {
+            "id": "11.4",
+            "score_raw": -7.369024276733398
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 8829,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה סירבה כנדרש מכיוון שאין בחוברת מידע לגבי כיסוי טיפולי שיניים.",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": null,
+          "expected_retrieved": null,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "probe_checks": {
+        "exact_refusal": true,
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "review": "בדיקת אבחון נפרדת; אין Judge נוסף ואין ציון PASS סופי"
+      }
+    },
+    "OLD-10": {
+      "case": {
+        "case_id": "OLD-10",
+        "q": "כמה עולה חניה בסניף?",
+        "expected_id": null,
+        "expected": "אין בחוברת מידע על מחיר חניה. חייבים לסרב ולא להמציא."
+      },
+      "result": {
+        "q": "כמה עולה חניה בסניף?",
+        "search_q": "כמה עולה חניה בסניף?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "4.6",
+            "score_raw": -3.8137218952178955
+          },
+          {
+            "id": "2.1",
+            "score_raw": -4.74584436416626
+          },
+          {
+            "id": "9.2",
+            "score_raw": -5.3048996925354
+          },
+          {
+            "id": "11.4",
+            "score_raw": -6.116654872894287
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.610488414764404
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 8670,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": null,
+          "expected_retrieved": null,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "probe_checks": {
+        "exact_refusal": true,
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "review": "בדיקת אבחון נפרדת; אין Judge נוסף ואין ציון PASS סופי"
+      }
+    },
+    "NEW-01": {
+      "case": {
+        "case_id": "NEW-01",
+        "q": "כמה אחוז מקבלים בחזרה על תרופה שלא בסל?",
+        "expected_id": "9.2",
+        "expected": "החזר תרופות מחוץ לסל בשיעור 75%."
+      },
+      "result": {
+        "q": "כמה אחוז מקבלים בחזרה על תרופה שלא בסל?",
+        "search_q": "כמה אחוז מקבלים בחזרה על תרופה שלא בסל?",
+        "role": "customer",
+        "hits": [
+          [
+            "9.2",
+            5.2
+          ]
+        ],
+        "trace": [
+          {
+            "id": "9.2",
+            "score_raw": 5.197030067443848
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.757424831390381
+          },
+          {
+            "id": "2.1",
+            "score_raw": -7.066119194030762
+          },
+          {
+            "id": "7.3",
+            "score_raw": -7.522415637969971
+          },
+          {
+            "id": "11.4",
+            "score_raw": -8.911023139953613
+          }
+        ],
+        "context": "[9.2] נוהל 9.2 – החזר הוצאות תרופות\nתרופות מחוץ לסל הבריאות מוחזרות בשיעור 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית. נדרש מרשם רופא ואישור מוקדם מהמחלקה הרפואית. תרופות ניסיוניות אינן מכוסות.",
+        "answer": "תרופות מחוץ לסל הבריאות מוחזרות בשיעור של 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית [9.2]. קבלת ההחזר מותנית בהצגת מרשם רופא ובקבלת אישור מוקדם מהמחלקה הרפואית, ותרופות ניסיוניות אינן מכוסות [9.2].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 11114,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "9.2"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "75",
+            "12,000",
+            "9",
+            "2",
+            "9",
+            "2"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "תרופות מחוץ לסל הבריאות מוחזרות בשיעור של 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית",
+              "supported": true,
+              "evidence": "תרופות מחוץ לסל הבריאות מוחזרות בשיעור 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית."
+            },
+            {
+              "claim": "קבלת ההחזר מותנית בהצגת מרשם רופא ובקבלת אישור מוקדם מהמחלקה הרפואית",
+              "supported": true,
+              "evidence": "נדרש מרשם רופא ואישור מוקדם מהמחלקה הרפואית."
+            },
+            {
+              "claim": "תרופות ניסיוניות אינן מכוסות",
+              "supported": true,
+              "evidence": "תרופות ניסיוניות אינן מכוסות."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מלאה, מדויקת, עונה על השאלה והציפייה, ועומדת בכללי הפורמט עם הפניה לנוהל המתאים.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 3,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "9.2",
+          "expected_retrieved": true,
+          "top": "9.2"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "NEW-02": {
+      "case": {
+        "case_id": "NEW-02",
+        "q": "עד מתי אפשר להגיש ערעור?",
+        "expected_id": "7.3",
+        "expected": "ערעור ניתן להגיש בתוך 45 ימים מקבלת מכתב הדחייה, לא 30 ימים."
+      },
+      "result": {
+        "q": "עד מתי אפשר להגיש ערעור?",
+        "search_q": "עד מתי אפשר להגיש ערעור?",
+        "role": "customer",
+        "hits": [
+          [
+            "7.3",
+            1.77
+          ]
+        ],
+        "trace": [
+          {
+            "id": "7.3",
+            "score_raw": 1.7703166007995605
+          },
+          {
+            "id": "4.6",
+            "score_raw": -2.7335026264190674
+          },
+          {
+            "id": "11.4",
+            "score_raw": -2.886378288269043
+          },
+          {
+            "id": "2.1",
+            "score_raw": -3.378688335418701
+          },
+          {
+            "id": "9.2",
+            "score_raw": -6.164681911468506
+          }
+        ],
+        "context": "[7.3] נוהל 7.3 – ערעור על דחיית תביעה\nלקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה. הערעור מוגש בכתב בלבד, דרך האזור האישי או בדואר. ועדת ערעורים תשיב בתוך 30 ימי עסקים. \nהערה: עד גרסה 3.0 התקופה לערעור הייתה 30 ימים.",
+        "answer": "לקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה [7.3].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 10780,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "7.3"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "45",
+            "7",
+            "3"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "לקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה",
+              "supported": true,
+              "evidence": "לקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מדויקת, עונה ישירות לשאלה על פי הנוהל העדכני (45 ימים), נתמכת במלואה בקונטקסט ועומדת בכל כללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "7.3",
+          "expected_retrieved": true,
+          "top": "7.3"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "NEW-03": {
+      "case": {
+        "case_id": "NEW-03",
+        "q": "אם אני מבטל אחרי חודש, אקבל כסף בחזרה?",
+        "expected_id": "4.6",
+        "expected": "לאחר חודש אין החזר יחסי והביטול נכנס לתוקף בסוף החודש הקלנדרי."
+      },
+      "result": {
+        "q": "אם אני מבטל אחרי חודש, אקבל כסף בחזרה?",
+        "search_q": "אם אני מבטל אחרי חודש, אקבל כסף בחזרה?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "4.6",
+            "score_raw": -2.531007766723633
+          },
+          {
+            "id": "2.1",
+            "score_raw": -5.024320125579834
+          },
+          {
+            "id": "9.2",
+            "score_raw": -5.40791654586792
+          },
+          {
+            "id": "7.3",
+            "score_raw": -5.486422538757324
+          },
+          {
+            "id": "11.4",
+            "score_raw": -7.675170421600342
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 7424,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "הקונטקסט ריק ואין מידע בנהלים, ולכן סירוב לענות הינו רלוונטי, מלא ותקין מבחינת הפורמט.",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "FAIL",
+        "reasons": [
+          "קיימת תשובה בחוברת אך התקבל סירוב"
+        ],
+        "fp_candidates": [
+          "FP2"
+        ],
+        "retrieval": {
+          "expected_id": "4.6",
+          "expected_retrieved": false,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "probe_checks": {
+        "exact_refusal": true,
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "review": "בדיקת אבחון נפרדת; אין Judge נוסף ואין ציון PASS סופי"
+      }
+    },
+    "NEW-04": {
+      "case": {
+        "case_id": "NEW-04",
+        "q": "אפשר להתקשר למוקד במוצאי שבת?",
+        "expected_id": "11.4",
+        "expected": "בשבת המוקד הרגיל סגור; במוצאי שבת אין שעות פתיחה נפרדות בחוברת ולכן אין להמציא אותן. קו החירום הרפואי פעיל 24/7."
+      },
+      "result": {
+        "q": "אפשר להתקשר למוקד במוצאי שבת?",
+        "search_q": "אפשר להתקשר למוקד במוצאי שבת?",
+        "role": "customer",
+        "hits": [
+          [
+            "11.4",
+            -0.66
+          ]
+        ],
+        "trace": [
+          {
+            "id": "11.4",
+            "score_raw": -0.658484160900116
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.47400426864624
+          },
+          {
+            "id": "2.1",
+            "score_raw": -5.899014949798584
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.765195369720459
+          },
+          {
+            "id": "9.2",
+            "score_raw": -7.465216159820557
+          }
+        ],
+        "context": "[11.4] נוהל 11.4 – שירות לקוחות\nמוקד הטלפוני פעיל בימים א'–ה' בשעות 08:00–20:00 ובימי ו' 08:00–13:00. בשבת ובחגים המוקד סגור, למעט קו חירום רפואי הפעיל 24/7.",
+        "answer": "המוקד הטלפוני פעיל רק בימים א'–ה' בשעות 08:00–20:00 ובימי ו' בשעות 08:00–13:00, ולכן הוא אינו פעיל במוצאי שבת [11.4]. \nעם זאת, ניתן להתקשר לקו חירום רפואי הפעיל 24/7 [11.4].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 22293,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "11.4"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "08",
+            "00",
+            "20",
+            "00",
+            "08",
+            "00",
+            "13",
+            "00,",
+            "11",
+            "4",
+            "24",
+            "7",
+            "11",
+            "4"
+          ],
+          "unsupported": [
+            "00,"
+          ],
+          "faithful": false
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "המוקד הטלפוני פעיל בימים א'–ה' בשעות 08:00–20:00 ובימי ו' בשעות 08:00–13:00, ואינו פעיל במוצאי שבת",
+              "supported": true,
+              "evidence": "מוקד הטלפוני פעיל בימים א'–ה' בשעות 08:00–20:00 ובימי ו' 08:00–13:00. בשבת ובחגים המוקד סגור"
+            },
+            {
+              "claim": "ניתן להתקשר לקו חירום רפואי הפעיל 24/7",
+              "supported": true,
+              "evidence": "למעט קו חירום רפואי הפעיל 24/7."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה נכונה, מדויקת, נתמכת במלואה בקונטקסט ועומדת בכללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 2,
+          "bad_evidence": []
+        },
+        "auto_status": "FAIL",
+        "reasons": [
+          "מספר שאינו מופיע בקונטקסט"
+        ],
+        "fp_candidates": [
+          "FP4"
+        ],
+        "retrieval": {
+          "expected_id": "11.4",
+          "expected_retrieved": true,
+          "top": "11.4"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "NEW-05": {
+      "case": {
+        "case_id": "NEW-05",
+        "q": "מתי אפשר להתחיל לקבל שירותים אחרי ההצטרפות?",
+        "expected_id": "2.1",
+        "expected": "אכשרה רגילה 90 ימים; לניתוחים 12 חודשים; מעבר רציף מחברה אחרת פוטר מאכשרה."
+      },
+      "result": {
+        "q": "מתי אפשר להתחיל לקבל שירותים אחרי ההצטרפות?",
+        "search_q": "מתי אפשר להתחיל לקבל שירותים אחרי ההצטרפות?",
+        "role": "customer",
+        "hits": [
+          [
+            "2.1",
+            -0.91
+          ]
+        ],
+        "trace": [
+          {
+            "id": "2.1",
+            "score_raw": -0.9074989557266235
+          },
+          {
+            "id": "11.4",
+            "score_raw": -3.2225730419158936
+          },
+          {
+            "id": "4.6",
+            "score_raw": -3.8596510887145996
+          },
+          {
+            "id": "7.3",
+            "score_raw": -5.538675785064697
+          },
+          {
+            "id": "9.2",
+            "score_raw": -5.972562313079834
+          }
+        ],
+        "context": "[2.1] נוהל 2.1 – הצטרפות לביטוח משלים\nלקוח חדש יכול להצטרף לביטוח המשלים בכל יום עסקים. תקופת אכשרה (המתנה) לפני קבלת שירותים: 90 ימים. לניתוחים: 12 חודשים. לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה.",
+        "answer": "תקופת האכשרה (המתנה) לפני קבלת שירותים היא 90 ימים, ולניתוחים היא 12 חודשים [2.1]. עם זאת, לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה [2.1].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 10718,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "2.1"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "90",
+            "12",
+            "2",
+            "1",
+            "2",
+            "1"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "תקופת האכשרה (המתנה) לפני קבלת שירותים היא 90 ימים",
+              "supported": true,
+              "evidence": "תקופת אכשרה (המתנה) לפני קבלת שירותים: 90 ימים."
+            },
+            {
+              "claim": "תקופת האכשרה לניתוחים היא 12 חודשים",
+              "supported": true,
+              "evidence": "לניתוחים: 12 חודשים."
+            },
+            {
+              "claim": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה",
+              "supported": true,
+              "evidence": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מדויקת, נתמכת במלואה בקונטקסט, מכילה את כל המידע המצופה ועומדת בכללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 3,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "2.1",
+          "expected_retrieved": true,
+          "top": "2.1"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "NEW-06": {
+      "case": {
+        "case_id": "NEW-06",
+        "q": "תרופות ניסיוניות מכוסות?",
+        "expected_id": "9.2",
+        "expected": "תרופות ניסיוניות אינן מכוסות."
+      },
+      "result": {
+        "q": "תרופות ניסיוניות מכוסות?",
+        "search_q": "תרופות ניסיוניות מכוסות?",
+        "role": "customer",
+        "hits": [
+          [
+            "9.2",
+            3.13
+          ]
+        ],
+        "trace": [
+          {
+            "id": "9.2",
+            "score_raw": 3.125586748123169
+          },
+          {
+            "id": "2.1",
+            "score_raw": -5.060096263885498
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.457363605499268
+          },
+          {
+            "id": "11.4",
+            "score_raw": -7.785326957702637
+          },
+          {
+            "id": "7.3",
+            "score_raw": -8.500227928161621
+          }
+        ],
+        "context": "[9.2] נוהל 9.2 – החזר הוצאות תרופות\nתרופות מחוץ לסל הבריאות מוחזרות בשיעור 75%, עד תקרה של 12,000 ש\"ח בשנה קלנדרית. נדרש מרשם רופא ואישור מוקדם מהמחלקה הרפואית. תרופות ניסיוניות אינן מכוסות.",
+        "answer": "תרופות ניסיוניות אינן מכוסות [9.2].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 8434,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "9.2"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "9",
+            "2"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "תרופות ניסיוניות אינן מכוסות",
+              "supported": true,
+              "evidence": "תרופות ניסיוניות אינן מכוסות."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "9.2",
+          "expected_retrieved": true,
+          "top": "9.2"
+        },
+        "final_status": "PENDING_REVIEW"
+      }
+    },
+    "NEW-07": {
+      "case": {
+        "case_id": "NEW-07",
+        "q": "האם יש כיסוי לטיפולי פוריות?",
+        "expected_id": null,
+        "expected": "אין בחוברת מידע על טיפולי פוריות. חייבים לסרב, לא לקבוע שאינם מכוסים."
+      },
+      "result": {
+        "q": "האם יש כיסוי לטיפולי פוריות?",
+        "search_q": "האם יש כיסוי לטיפולי פוריות?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "4.6",
+            "score_raw": -4.036479949951172
+          },
+          {
+            "id": "9.2",
+            "score_raw": -4.867394924163818
+          },
+          {
+            "id": "2.1",
+            "score_raw": -4.886572360992432
+          },
+          {
+            "id": "11.4",
+            "score_raw": -6.48261022567749
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.705759048461914
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 5686,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה סירבה לענות כנדרש בהיעדר מידע על טיפולי פוריות בקונטקסט, ללא קביעה שגויה שאינם מכוסים.",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": null,
+          "expected_retrieved": null,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "probe_checks": {
+        "exact_refusal": true,
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "review": "בדיקת אבחון נפרדת; אין Judge נוסף ואין ציון PASS סופי"
+      }
+    },
+    "NEW-08": {
+      "case": {
+        "case_id": "NEW-08",
+        "q": "איך מעדכנים כתובת מגורים?",
+        "expected_id": null,
+        "expected": "אין בחוברת הוראות לעדכון כתובת מגורים. חייבים לסרב."
+      },
+      "result": {
+        "q": "איך מעדכנים כתובת מגורים?",
+        "search_q": "איך מעדכנים כתובת מגורים?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "4.6",
+            "score_raw": -4.3028244972229
+          },
+          {
+            "id": "11.4",
+            "score_raw": -5.690548896789551
+          },
+          {
+            "id": "7.3",
+            "score_raw": -5.827381134033203
+          },
+          {
+            "id": "2.1",
+            "score_raw": -6.501550197601318
+          },
+          {
+            "id": "9.2",
+            "score_raw": -7.245489597320557
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 5100,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": null,
+          "expected_retrieved": null,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "probe_checks": {
+        "exact_refusal": true,
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "review": "בדיקת אבחון נפרדת; אין Judge נוסף ואין ציון PASS סופי"
+      }
+    },
+    "NEW-09": {
+      "case": {
+        "case_id": "NEW-09",
+        "q": "מה שעות הפתיחה של הסניף בחיפה?",
+        "expected_id": null,
+        "expected": "אין בחוברת מידע על סניף בחיפה או שעותיו. חייבים לסרב, לא להעתיק שעות מוקד."
+      },
+      "result": {
+        "q": "מה שעות הפתיחה של הסניף בחיפה?",
+        "search_q": "מה שעות הפתיחה של הסניף בחיפה?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "11.4",
+            "score_raw": -2.194892168045044
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.62684440612793
+          },
+          {
+            "id": "2.1",
+            "score_raw": -5.897533416748047
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.317982196807861
+          },
+          {
+            "id": "9.2",
+            "score_raw": -7.8821234703063965
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 6047,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "הקונטקסט אינו מכיל מידע על שעות הפתיחה של סניף חיפה, ולכן התשובה סירבה בצדק ובהתאם לציפייה.",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": null,
+          "expected_retrieved": null,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "probe_checks": {
+        "exact_refusal": true,
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "review": "בדיקת אבחון נפרדת; אין Judge נוסף ואין ציון PASS סופי"
+      }
+    }
+  },
+  "followups": {
+    "FOLLOW-01": {
+      "case": {
+        "case_id": "FOLLOW-01",
+        "history": [
+          "איך מערערים על דחיית תביעה?"
+        ],
+        "q": "ותוך כמה זמן מקבלים תשובה?",
+        "expected_id": "7.3",
+        "expected": "מענה ועדת הערעורים בתוך 30 ימי עסקים; השכתוב צריך להזכיר ערעור בלי להוסיף פרטים.",
+        "unchanged": false
+      },
+      "rewritten": "תוך כמה זמן מקבלים תשובה על ערעור על דחיית תביעה?",
+      "rewrite_signature": "d775d4ca765ddc59fa3f70e404e8b000b79d1c39a6aba4078b468483d4f20df2",
+      "final_status": "PENDING_REVIEW",
+      "result": {
+        "q": "תוך כמה זמן מקבלים תשובה על ערעור על דחיית תביעה?",
+        "search_q": "תוך כמה זמן מקבלים תשובה על ערעור על דחיית תביעה?",
+        "role": "customer",
+        "hits": [
+          [
+            "7.3",
+            8.38
+          ]
+        ],
+        "trace": [
+          {
+            "id": "7.3",
+            "score_raw": 8.376418113708496
+          },
+          {
+            "id": "4.6",
+            "score_raw": -3.4881820678710938
+          },
+          {
+            "id": "11.4",
+            "score_raw": -5.5691094398498535
+          },
+          {
+            "id": "2.1",
+            "score_raw": -6.002386569976807
+          },
+          {
+            "id": "9.2",
+            "score_raw": -8.021981239318848
+          }
+        ],
+        "context": "[7.3] נוהל 7.3 – ערעור על דחיית תביעה\nלקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה. הערעור מוגש בכתב בלבד, דרך האזור האישי או בדואר. ועדת ערעורים תשיב בתוך 30 ימי עסקים. \nהערה: עד גרסה 3.0 התקופה לערעור הייתה 30 ימים.",
+        "answer": "ועדת הערעורים תשיב לפנייה בתוך 30 ימי עסקים [7.3].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 10815,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "7.3"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "30",
+            "7",
+            "3"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "ועדת הערעורים תשיב לפנייה בתוך 30 ימי עסקים",
+              "supported": true,
+              "evidence": "ועדת ערעורים תשיב בתוך 30 ימי עסקים."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה מלאה, מדויקת, עומדת בכללי הפורמט ונתמכת במלואה בקונטקסט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 1,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "7.3",
+          "expected_retrieved": true,
+          "top": "7.3"
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "unchanged_check": null
+    },
+    "FOLLOW-02": {
+      "case": {
+        "case_id": "FOLLOW-02",
+        "history": [
+          "יש תקופת המתנה לניתוח?"
+        ],
+        "q": "ואם עברתי מחברה אחרת?",
+        "expected_id": "2.1",
+        "expected": "פטור מאכשרה במעבר מחברה אחרת ללא הפסקה; אין להמציא שהמעבר אכן היה רציף.",
+        "unchanged": false
+      },
+      "rewritten": "האם יש תקופת המתנה לניתוח אם עברתי מחברה אחרת?",
+      "rewrite_signature": "d775d4ca765ddc59fa3f70e404e8b000b79d1c39a6aba4078b468483d4f20df2",
+      "final_status": "PENDING_REVIEW",
+      "result": {
+        "q": "האם יש תקופת המתנה לניתוח אם עברתי מחברה אחרת?",
+        "search_q": "האם יש תקופת המתנה לניתוח אם עברתי מחברה אחרת?",
+        "role": "customer",
+        "hits": [
+          [
+            "2.1",
+            3.13
+          ]
+        ],
+        "trace": [
+          {
+            "id": "2.1",
+            "score_raw": 3.1317338943481445
+          },
+          {
+            "id": "4.6",
+            "score_raw": -5.5191874504089355
+          },
+          {
+            "id": "9.2",
+            "score_raw": -6.492566108703613
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.852261066436768
+          },
+          {
+            "id": "11.4",
+            "score_raw": -8.64298152923584
+          }
+        ],
+        "context": "[2.1] נוהל 2.1 – הצטרפות לביטוח משלים\nלקוח חדש יכול להצטרף לביטוח המשלים בכל יום עסקים. תקופת אכשרה (המתנה) לפני קבלת שירותים: 90 ימים. לניתוחים: 12 חודשים. לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה.",
+        "answer": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה [2.1]. במידה והייתה הפסקה, תקופת ההמתנה לניתוחים עומדת על 12 חודשים [2.1].",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 6828,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [
+            "2.1"
+          ],
+          "unknown": [],
+          "has_citation": true
+        },
+        "numbers": {
+          "numbers": [
+            "2",
+            "1",
+            "12",
+            "2",
+            "1"
+          ],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [
+            {
+              "claim": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה",
+              "supported": true,
+              "evidence": "לקוח שעבר מחברה אחרת ללא הפסקה פטור מתקופת האכשרה."
+            },
+            {
+              "claim": "במידה והייתה הפסקה, תקופת ההמתנה לניתוחים עומדת על 12 חודשים",
+              "supported": true,
+              "evidence": "לניתוחים: 12 חודשים."
+            }
+          ],
+          "refused": false,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "התשובה נכונה, נתמכת באופן מלא על ידי הקונטקסט, מתייחסת לתנאי הרציפות בהתאם לציפייה, ועומדת בכללי הפורמט.",
+          "faithfulness": 1.0,
+          "verified_faithfulness": 1.0,
+          "claim_count": 2,
+          "bad_evidence": []
+        },
+        "auto_status": "PASS_CANDIDATE",
+        "reasons": [],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "2.1",
+          "expected_retrieved": true,
+          "top": "2.1"
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "unchanged_check": null
+    },
+    "SWITCH-01": {
+      "case": {
+        "case_id": "SWITCH-01",
+        "history": [
+          "יש תקופת המתנה לניתוח?"
+        ],
+        "q": "ומה עם תרופות?",
+        "expected_id": "9.2",
+        "expected": "מידע תרופות לפי נוהל 9.2 בלבד; השכתוב חייב להחזיר את השאלה המקורית בדיוק.",
+        "unchanged": true
+      },
+      "rewritten": "האם יש תקופת המתנה לתרופות?",
+      "rewrite_signature": "d775d4ca765ddc59fa3f70e404e8b000b79d1c39a6aba4078b468483d4f20df2",
+      "final_status": "PENDING_REVIEW",
+      "result": {
+        "q": "האם יש תקופת המתנה לתרופות?",
+        "search_q": "האם יש תקופת המתנה לתרופות?",
+        "role": "customer",
+        "hits": [],
+        "trace": [
+          {
+            "id": "2.1",
+            "score_raw": -3.105992555618286
+          },
+          {
+            "id": "9.2",
+            "score_raw": -3.2909040451049805
+          },
+          {
+            "id": "4.6",
+            "score_raw": -4.225498676300049
+          },
+          {
+            "id": "11.4",
+            "score_raw": -6.0471415519714355
+          },
+          {
+            "id": "7.3",
+            "score_raw": -6.384824275970459
+          }
+        ],
+        "context": "",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "pipeline_guard",
+        "empty_context_probe": "לא מצאתי בנהלים",
+        "ms": 7035,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "הקונטקסט ריק ואין בו מידע לענות על השאלה, לכן סירוב לענות הוא המענה המתאים, הרלוונטי והשלם.",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "FAIL",
+        "reasons": [
+          "קיימת תשובה בחוברת אך התקבל סירוב"
+        ],
+        "fp_candidates": [
+          "FP2"
+        ],
+        "retrieval": {
+          "expected_id": "9.2",
+          "expected_retrieved": false,
+          "top": null
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "unchanged_check": false
+    },
+    "SWITCH-02": {
+      "case": {
+        "case_id": "SWITCH-02",
+        "history": [
+          "איך מערערים על דחיית תביעה?"
+        ],
+        "q": "מתי המוקד פתוח בשישי?",
+        "expected_id": "11.4",
+        "expected": "שישי 08:00 עד 13:00; השכתוב חייב להחזיר את השאלה המקורית בדיוק.",
+        "unchanged": true
+      },
+      "rewritten": "מתי המוקד לערעור על דחיית תביעה פתוח בשישי?",
+      "rewrite_signature": "d775d4ca765ddc59fa3f70e404e8b000b79d1c39a6aba4078b468483d4f20df2",
+      "final_status": "PENDING_REVIEW",
+      "result": {
+        "q": "מתי המוקד לערעור על דחיית תביעה פתוח בשישי?",
+        "search_q": "מתי המוקד לערעור על דחיית תביעה פתוח בשישי?",
+        "role": "customer",
+        "hits": [
+          [
+            "7.3",
+            0.35
+          ],
+          [
+            "11.4",
+            -1.95
+          ]
+        ],
+        "trace": [
+          {
+            "id": "7.3",
+            "score_raw": 0.34569376707077026
+          },
+          {
+            "id": "11.4",
+            "score_raw": -1.9508764743804932
+          },
+          {
+            "id": "4.6",
+            "score_raw": -4.850128650665283
+          },
+          {
+            "id": "2.1",
+            "score_raw": -6.570981025695801
+          },
+          {
+            "id": "9.2",
+            "score_raw": -8.194111824035645
+          }
+        ],
+        "context": "[7.3] נוהל 7.3 – ערעור על דחיית תביעה\nלקוח רשאי לערער על דחיית תביעה בתוך 45 ימים ממועד קבלת מכתב הדחייה. הערעור מוגש בכתב בלבד, דרך האזור האישי או בדואר. ועדת ערעורים תשיב בתוך 30 ימי עסקים. \nהערה: עד גרסה 3.0 התקופה לערעור הייתה 30 ימים.\n\n[11.4] נוהל 11.4 – שירות לקוחות\nמוקד הטלפוני פעיל בימים א'–ה' בשעות 08:00–20:00 ובימי ו' 08:00–13:00. בשבת ובחגים המוקד סגור, למעט קו חירום רפואי הפעיל 24/7.",
+        "answer": "לא מצאתי בנהלים",
+        "answer_source": "gemini",
+        "empty_context_probe": null,
+        "ms": 13685,
+        "generation_called": true
+      },
+      "quality": {
+        "citations": {
+          "cited": [],
+          "unknown": [],
+          "has_citation": false
+        },
+        "numbers": {
+          "numbers": [],
+          "unsupported": [],
+          "faithful": true
+        },
+        "judge": {
+          "claims": [],
+          "refused": true,
+          "relevant": true,
+          "complete": true,
+          "format_ok": true,
+          "reason": "בנוהל 7.3 מצוין כי ערעור מוגש בכתב בלבד (דרך האזור האישי או בדואר), ואין בנהלים מוקד טלפוני לערעורים (המוקד בנוהל 11.4 הוא לשירות לקוחות כללי). מאחר שאין תשובה בחוברת לשאלה על מוקד ערעורים, הסירוב מדויק, רלוונטי, מלא ועומד בכללי הפורמט.",
+          "faithfulness": null,
+          "verified_faithfulness": null,
+          "claim_count": 0,
+          "bad_evidence": []
+        },
+        "auto_status": "FAIL",
+        "reasons": [
+          "קיימת תשובה בחוברת אך התקבל סירוב"
+        ],
+        "fp_candidates": [],
+        "retrieval": {
+          "expected_id": "11.4",
+          "expected_retrieved": true,
+          "top": "7.3"
+        },
+        "final_status": "PENDING_REVIEW"
+      },
+      "unchanged_check": false
+    }
+  },
+  "report_status": "NOT_WRITTEN_PENDING_REAL_OUTPUT_REVIEW",
+  "publication_metadata": {
+    "format": "baseline_snapshot_with_publication_metadata",
+    "prepared_on": "2026-11-10",
+    "source_results_sha256": "7ccac87a9cd678c3b5947bca34a5ccb7ad009d4ff60793e5827c1d41e18bf649",
+    "original_run_document_sha256": "923188ceaca36537f5c123fc56e3992b3e689e5c792c0384fe762359472e60f2",
+    "public_document_sha256": "1784cf63de7558efc44e5679deaf252cb6aa11c833fe747fe93fbf0d8be1b6ea",
+    "policy_sections_unchanged": true,
+    "changes": [
+      "Added publication metadata; original evaluation records remain unchanged.",
+      "Only the public source document header was reworded; policy sections are identical."
+    ],
+    "interpretation": [
+      "run_signature and doc_sha256 describe the historical baseline, not this public notebook.",
+      "Historical report_status and PENDING_REVIEW flags are retained; see review_decisions.json.",
+      "The snapshot is evidence only, not a resumable checkpoint for the public notebook.",
+      "No new live model calls were performed during publication preparation."
+    ]
+  }
+}

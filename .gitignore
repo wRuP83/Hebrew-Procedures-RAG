@@ -1,0 +1,14 @@
+artifacts/
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+*.log
+*.zip
