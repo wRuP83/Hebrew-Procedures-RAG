@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL_CANDIDATE_NOT_PUBLISHED",
+  "prepared_on": "2026-11-10",
+  "algorithm_changes": false,
+  "public_notebook_changes": [
+    "Replaced introductory text with high-level section summaries.",
+    "Reworded the synthetic document header; policy sections unchanged.",
+    "Changed generated output paths, labels, archive names and notebook revision.",
+    "Cleared outputs and unnecessary notebook metadata."
+  ],
+  "baseline_records_changed": false,
+  "source_results_sha256": "7ccac87a9cd678c3b5947bca34a5ccb7ad009d4ff60793e5827c1d41e18bf649",
+  "baseline_notebook_sha256": "c71960ace15fd40a6c305991e3235329addd4c06f2723185b650a1b71baceceb",
+  "public_notebook_sha256": "b15eb49e9202763e7ac87e6a3e27dacb32d5c8fc952fd5bb870cc82bfdd7cf13"
+}

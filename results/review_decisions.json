@@ -1,0 +1,215 @@
+{
+  "review_method": "Assistant-assisted comparison of recorded outputs against the supplied synthetic policies.",
+  "baseline_date": "2026-11-09",
+  "prepared_on": "2026-11-10",
+  "new_live_model_calls_for_preparation": 0,
+  "scope": "One small baseline evaluation; not a general accuracy estimate.",
+  "summary": {
+    "base": {
+      "total": 19,
+      "auto_pass_candidate": 17,
+      "auto_fail": 2,
+      "review_pass": 18,
+      "review_fail": 1
+    },
+    "followups": {
+      "total": 4,
+      "review_pass": 2,
+      "review_fail_against_contract": 2
+    }
+  },
+  "decisions": {
+    "OLD-01": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-02": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-03": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-04": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-05": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-06": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-07": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-08": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-09": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "OLD-10": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-01": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-02": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-03": {
+      "group": "base",
+      "auto_status_recorded": "FAIL",
+      "review_status": "FAIL",
+      "primary_cause": "FP2",
+      "finding_ids": [
+        "RAG-01"
+      ],
+      "reason": "נוהל 4.6 דורג ראשון אך סונן מתחת לסף; התקבל סירוב למרות תשובה קיימת."
+    },
+    "NEW-04": {
+      "group": "base",
+      "auto_status_recorded": "FAIL",
+      "review_status": "PASS",
+      "primary_cause": "NUMERIC_CHECKER_FALSE_POSITIVE",
+      "finding_ids": [
+        "QA-01"
+      ],
+      "reason": "תשובה תקינה; הסיווג האוטומטי נגרם מחילוץ פסיק כחלק ממספר."
+    },
+    "NEW-05": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-06": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-07": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-08": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "NEW-09": {
+      "group": "base",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "התשובה או הסירוב תואמים לשאלה ולנהלים שסופקו."
+    },
+    "FOLLOW-01": {
+      "group": "followups",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "הושלם ההקשר ללא המצאת פרטים והתשובה תואמת לנהלים."
+    },
+    "FOLLOW-02": {
+      "group": "followups",
+      "auto_status_recorded": "PASS_CANDIDATE",
+      "review_status": "PASS",
+      "primary_cause": null,
+      "finding_ids": [],
+      "reason": "הושלם ההקשר ללא המצאת פרטים והתשובה תואמת לנהלים."
+    },
+    "SWITCH-01": {
+      "group": "followups",
+      "auto_status_recorded": "FAIL",
+      "review_status": "FAIL",
+      "primary_cause": "AMBIGUOUS_REWRITE_CONTRACT",
+      "finding_ids": [
+        "RAG-03"
+      ],
+      "reason": "FAIL מול דרישת שאלה ללא שינוי; אין הוכחה חד-משמעית להזיית כוונה בגלל עמימות הקלט."
+    },
+    "SWITCH-02": {
+      "group": "followups",
+      "auto_status_recorded": "FAIL",
+      "review_status": "FAIL",
+      "primary_cause": "REWRITE_SPECIFICITY",
+      "finding_ids": [
+        "RAG-02"
+      ],
+      "reason": "נוסף מוקד לערעור לשאלה עצמאית על שעות שירות, והמערכת סירבה לשאלה ששונתה."
+    }
+  }
+}
